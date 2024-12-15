@@ -1,0 +1,443 @@
+/* ================ COMMON STYLES ================ */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #2e2f42;
+  background-color: #ffffff;
+  line-height: 1.5;
+
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-tasks-page {
+  max-width: 440px;
+  padding: 24px;
+  padding-top: 70px;
+}
+
+.tasks-page {
+  background-color: #003b51;
+}
+
+.container-tasks-page ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.container-tasks-page a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  height: 50px;
+  min-width: 100px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  outline: none;
+
+  background-color: #08da7f;
+  transition: background-color 250ms ease-in-out;
+}
+
+.container-tasks-page a:hover,
+.container-tasks-page a:focus {
+  background-color: #0bba6e;
+}
+
+.go-back-link {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  height: 50px;
+  min-width: 100px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  outline: none;
+
+  background-color: #08da7f;
+  transition: background-color 250ms ease-in-out;
+}
+
+.go-back-link:hover,
+.go-back-link:focus {
+  background-color: #0bba6e;
+}
+
+/* ==================== Task-1 styles ==================== */
+.container-task-one {
+  max-width: 440px;
+  padding: 24px;
+  padding-top: 70px;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+#categories > li.item {
+  border-radius: 8px;
+  padding: 16px;
+  width: 392px;
+
+  background-color: #f6f6fe;
+}
+
+#categories > li.item > h2 {
+  font-weight: 600;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 16px;
+}
+
+#categories > li.item > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+#categories > li.item li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+
+  padding: 8px 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* ==================== /Task-1 styles ==================== */
+
+/* ==================== Task-2 styles ==================== */
+.container-task-two {
+  width: 1176px;
+  padding: 24px;
+  padding-top: 70px;
+}
+
+.container-task-two > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.gallery-list-img {
+  width: 360px;
+  height: 300px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+/* ==================== /Task-2 styles ==================== */
+
+/* ==================== Task-3 styles ==================== */
+.container-task-three {
+  width: 408px;
+  padding: 24px;
+  padding-top: 70px;
+}
+
+input#name-input {
+  border: 1px solid #808080;
+  transition: border-color 250ms ease-in-out;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+
+  font-size: 16px;
+  letter-spacing: 0.04em;
+
+  padding-left: 8px;
+  margin-bottom: 16px;
+}
+
+input#name-input::placeholder {
+  color: inherit;
+}
+
+.container-task-three h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+}
+/* ==================== /Task-3 styles ==================== */
+
+/* ==================== Task-4 styles ==================== */
+.container-task-four {
+  width: 408px;
+  padding: 24px;
+  padding-top: 70px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+
+  letter-spacing: 0.04em;
+}
+
+.login-form label:last-of-type {
+  margin-bottom: 16px;
+}
+
+.login-form input {
+  padding-left: 8px;
+  margin-top: 8px;
+
+  border: 1px solid #808080;
+  transition: border-color 250ms ease-in-out;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+
+  letter-spacing: 0.04em;
+
+  outline: none;
+}
+
+.login-form input:hover,
+.login-form input:focus {
+  border-color: #000;
+}
+
+.login-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 86px;
+  border: none;
+  outline: none;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  background-color: #4e75ff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.login-form button:hover,
+.login-form button:focus {
+  background-color: #6c8cff;
+}
+/* ==================== /Task-4 styles ==================== */
+
+/* ==================== Task-5 styles ==================== */
+.container-task-five {
+  width: 345px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.widget {
+  background-color: #ffffff;
+  padding: 100px 88px;
+
+  border: 5px solid #4e75ff;
+  border-radius: 16px;
+}
+
+.widget p {
+  text-align: center;
+  letter-spacing: 0.04em;
+  padding-bottom: 16px;
+}
+
+.widget button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 148px;
+  border: none;
+  outline: none;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  background-color: #4e75ff;
+  transition: background-color 250ms ease-in-out;
+}
+
+.widget button:hover,
+.widget button:focus {
+  background-color: #6c8cff;
+}
+/* ==================== /Task-5 styles ==================== */
+
+/* ==================== Task-6 styles ==================== */
+.container-task-six {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  width: 534px;
+  padding: 24px;
+  padding-top: 70px;
+  align-items: center;
+}
+
+#controls {
+  display: flex;
+  column-gap: 16px;
+
+  width: 100%;
+
+  border: 5px solid #4e75ff;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: #f6f6fe;
+}
+
+#controls input {
+  border: 1px solid #808080;
+  transition: border-color 250ms ease-in-out;
+  border-radius: 8px;
+  padding-left: 8px;
+
+  text-align: center;
+  width: 150px;
+  height: 40px;
+
+  letter-spacing: 0.04em;
+  outline: none;
+}
+
+#controls input:hover,
+#controls input:focus {
+  border-color: #000;
+}
+
+#controls button {
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 120px;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+#controls button:nth-of-type(1) {
+  background-color: #4e75ff;
+}
+
+#controls button:nth-of-type(1):hover,
+#controls button:nth-of-type(1):focus {
+  background-color: #6c8cff;
+}
+
+#controls button:nth-of-type(2) {
+  background-color: #ff4e4e;
+}
+
+#controls button:nth-of-type(2):hover,
+#controls button:nth-of-type(2):focus {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 40px;
+
+  width: 100%;
+  min-height: 134px;
+
+  border: 5px solid #4e75ff;
+  border-radius: 16px;
+
+  padding: 32px;
+  background-color: #f6f6fe;
+}
+
+.boxes-container {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 1440px;
+}
+/* ==================== /Task-6 styles ==================== */
